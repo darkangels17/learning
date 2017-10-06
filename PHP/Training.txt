@@ -1,0 +1,120 @@
+Training
+MySQL căn bản
+Cài đặt MySQL
+Tổng quan về MySQL
+Create Database(Tạo database)
+Data Type(Kiểu dữ liệu)
+Create Table(Tạo bảng)
+Alter Table(Sửa cấu trúc bảng)
+Insert Into(Thêm dữ liệu)
+Select(Truy xuất dữ liệu)
+Where(Truy xuất dữ liệu dựa vào điều kiện)
+Limit, Offset(Giới hạn dữ liệu truy xuất)
+Order By(Lấy kết quả theo thứ tự)
+Group By, Distinct(Lấy kết quả không trùng nhau)
+Update(Cập nhật dữ liệu)
+Delete(Xóa dữ liệu)
+Inner Join, Left Join, Right Join(Liên kết các bảng)
+Primary Key, Forein Key
+Other statement
+PHP căn bản
+Tạo project training
+PHP căn bản
+Lý thuyết 
+Điều khiển flow
+Lý thuyết
+Bài tập 
+Mảng
+Lý thuyết
+Bài tập
+String (chuỗi)
+Lý thuyết
+Bài tập
+Php và form HTML
+Lý thuyết
+Bài tập
+Tái sử dụng Code và cách viết Function 
+Lý thuyết
+Bài tập
+Class
+Lý thuyết
+DataBase 
+Lý thuyết
+Họp/sua review
+Bài tập
+Session và Cookies 
+Lý thuyết
+Bài tập
+Object-Oriented PHP 
+Lý thuyết
+Update theo review
+
+
+
+Cake Framework
+Dựng CakePHP Framework
+Lý thuyết
+Tìm hiểu các thư mục trong /app
+Tìm hiểu về routes
+Tìm hiểu về controller
+Định nghĩa, các chức năng chính của Controller
+Các thuộc tính của Controller
+Các đối tượng request, reponse của Controller
+Tìm hiểu về Model
+Định nghĩa, các chức năng chính của model
+Tạo cơ sở dữ liệu SQL Server tương ứng với CakePHP
+Các phương thức thường dùng trong Model
+Các loại quan hệ trong Model
+Tìm hiểu property của Model
+Các function callback của Model
+Tìm hiểu về View/layout
+Định nghĩa, các chức năng chính của View
+Thành phần của View
+Các phương thức dùng trong view
+Tìm hiểu các Quy ước của CakePHP
+Quy ước tạo CSDL
+Quy ước đặt tên file, class
+Quy ước đặt tên Model
+Quy ước về Controller
+Quy ước về View
+Tìm Hiểu Phần Console and Shell
+Cách thức tạo ra 1 file batch và các thuộc tính của Console and shell
+Bài tập
+Create DB, tạo MH đăng nhập
+Tạo MH list, add, update, delete hội viên
+Test screen
+Demo, review kết quả
+Sửa theo review
+
+
+
+Training Buildee
+Cài đặt virtualbox va vagrant
+Import box
+Dựng source code của hệ thống
+Cài plugin CodeSniffer vào tool Zen Studio hoặc Eclip
+Giảng Overview hệ thống
+Đọc tài liệu - tìm hiểu hệ thống
+Tìm hiểu nghiệp vụ-chức năng của user: Quản lý chi nhánh
+Tìm hiểu nghiệp vụ-chức năng của user: Giám sát hiện trường
+Tìm hiểu nghiệp vụ-chức năng của user: Thư ký
+Tìm hiểu nghiệp vụ-chức năng của user: Đốc công
+Thực hành
+User giám sát hiện trường tạo 1 hiện trường mới và actice hiện trường.
+Tạo mới Dự định/Thành tích tác nghiệp cho hiện trường vừa tạo.
+Tạo mới dự định Gate cho hiện trường vừa tạo.
+Tạo mới dự định Cần cẩu/Máy trục cho hiện trường vừa tạo.
+Tạo mới dự định Trang thiết bị cho hiện trường vừa tạo.
+Semina kết quả
+Đọc tài liệu cách tạo 1 popup, sugges, form
+Code lại popup add công ty partner hiện có vào DB (Không cần validate)
+Lấy danh sách công ty partner
+Code chức năng hiển thị popup
+Hiển thị danh sách công ty partner ra hạng mục [協力会社] trong popup
+Add công ty partner vào DB.
+Review source code
+Sửa code theo review
+
+
+	https://www.youtube.com/watch?v=s30E7ssEQWI														
+															
