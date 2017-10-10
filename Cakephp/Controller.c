@@ -84,6 +84,8 @@
 		Controller::loadModel(String $modelClass, String type );
 		- Phương thức loadModel() tiện dụng khi bạn cần phải sử dụng một mô hình table/colection mà không phải của một controller mặc định 
 
+
+
 								========================================================================
 											====================================================
 											
