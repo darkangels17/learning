@@ -61,6 +61,14 @@
 			});
 		=> Blog\Controller\ArticlesController::index().
 2. Connecting Routes
+		// In config/routes.php
+		use Cake\Routing\Route\DashedRoute;
+
+		Router::scope('/', function ($routes) {
+		    // Connect the generic fallback routes.
+		    $routes->fallbacks(DashedRoute::class);
+		});
+		
 
 							        =================================================
 										=====================================
