@@ -80,11 +80,67 @@
 		Controller::setAction($ action,$args ...);
 		Nếu bạn cần chuyển tiếp hành động hiện tại sang hành động khác trên cùng một Controller 
 			$this->setAction(['action'=>'actionOther']);
-6. Load Additional model 
+6. Load Additional Model 
 		Controller::loadModel(String $modelClass, String type );
 		- Phương thức loadModel() tiện dụng khi bạn cần phải sử dụng một mô hình table/colection mà không phải của một controller mặc định 
+			// Trong một phương pháp điều khiển. 
+				$ this -> loadModel ( 'Articles' ); 
+				$ recentArticles  =  $ this -> Articles -> find ( 'tất cả' ,  [ 
+				    'limit'  =>  5 , 
+				    'order'  =>  'Articles.created DESC' 
+				]);
+		- Nếu bạn đang sử dụng một nhà cung cấp bảng khác với ORM được xây dựng, bạn có thể liên kết hệ thống bảng đó vào bộ điều khiển của 
+		CakePHP 
+				// Trong một phương pháp điều khiển. 
+				$ this -> modelFactory ( 
+				    'ElasticIndex' , 
+				    [ 'ElasticIndexes' ,  'factory' ] 
+				);
+		- Sau khi đăng kí bạn có thể sử dụng loadModel
+				// Trong một phương pháp điều khiển. 
+				$ this -> loadModel ( 'Locations' ,  'ElasticIndex' );
+7. Paginating a Model
+	Controller::paginate();
+	Phương pháp này được sử dụng để phân trang các kết quả
+		     $this->paginate = array(
+		       'limit' => 4,// mỗi page có 4 record
+		       'order' => array('id' => 'desc'),//giảm dần theo id
+		     );
+		     $data = $this->paginate("Book");
+		     $this->set("data",$data);
+8. Configuring Componets to Load //Cấu hình các thành phần để tải 
+	Controller::loadComponet($name, $config = []);
+		public function initialize()
+		{
+		    parent::initialize();
+		    $this->loadComponent('Csrf');
+		    $this->loadComponent('Comments', Configure::read('Comments'));
+		}
+		https://book.cakephp.org/3.0/en/controllers/components.html#configuring-components
+		http://nongdanit.info/php-mysql/cakephp-bai-9-component-cach-viet-mot-component-trong-cakephp.html
+9. Configuring Helpers to Load  
+	Để sử dụng các lớp MVC bổ sung
+	class RecipesController extends AppController
+	{
+	    public $helpers = ['Form']; // Form là tên ClassHelper 
+	}
+
+	https://book.cakephp.org/3.0/en/views/helpers.html#configuring-helpers  : xem để hiểu cấu hình helpper cho 3.0
+	http://nongdanit.info/php-mysql/cakephp-bai-10-helper-tao-mot-helper-trong-cakephp.html
+10. request Life - cycle Callback
+	Bộ diều khiển CakePHP kích hoạt một số sự kiện, gọi lại mà bạn có thể sử dụng để chèn logic xung quanh vòng đời 
+ 10.1 Danh sách sự kiện 
+ 	Controller.initialize
+ 	Controller.startup
+ 	Controller.beforeRender
+ 	Controller.beforeRedirect
+ 	Controller.beforeShutdown
+ 10.2 Các phương pháp gọi lại của controller
+  		Controller::beforeFilter(Event $event);
+  		Cake\Controller\Controller::afterFilter(Event $event)
 
 
+ https://book.cakephp.org/3.0/en/controllers.html
 
 								========================================================================
 											====================================================
