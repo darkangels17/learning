@@ -8,7 +8,7 @@
  ?>
  <?php	
  echo $this->Form->hidden('checkExist');			
- echo $this->Form->input('email',['label'=>'Mail address']);
+ echo $this->Form->input('emailLogin',['label'=>'Mail address']);
  echo $this->Form->input('password',['label'=>'Password']);
  echo $this->Form->end('Login');
 ?>
