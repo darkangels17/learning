@@ -6,6 +6,7 @@
 			<?=$error ?>
 		</div>
 		<?php } ?>
+		
 		<table>
 			<tr>
 				<td> User Name </td>
@@ -32,9 +33,20 @@
 				<td><?php echo $this->Form->input('birthday',['type'=>'text','label'=>false]);?></td>
 			</tr>
 			<tr>
-				<td> Member Type </td>
-				<td><?php echo $this->Form->input('type',['label'=> false, 'type' => 'select','multiple' => false ,'options'=>['User','Admin'],'selected' => 0]);?></td>
+					<td> Member Type </td>
+					<td><?php
+ 						echo $this->Form->input('type', [
+ 							'options' => ['0'=>'User','1'=>'Admin'],
+ 							'default' => '0',
+ 							'type' =>'radio',
+ 							]);
+						?>
+					</td>
+			</tr>
+			</tr>
+				<td><center><?php  echo $this->Form->end('Add');?></center></td>
+				<td><input type = 'button' value= 'Back' onclick = "location.href = 'index'"/></td>
 			</tr>
 		</table>
-	<center><?php  echo $this->Form->end('Add');?></center>
+	
 </div>
